@@ -1,0 +1,29 @@
+﻿@page
+@model FitnessClubApp.Pages.CoachesModel
+@{
+}
+<div class="text-center">
+    <table class="table table-bordered w-75 m-5 bg-light">
+        <tr>
+            <th>Name</th>
+            <th>Coach Type</th>
+            <th>Email</th>
+            <th>Contact</th>
+        </tr>
+
+
+        @foreach (var item in Model.Coaches)
+        {
+            <tr>
+                <td><a asp-page="CoachStory" asp-route-id=@item.CoachId>@item.CoachName</a></td>
+                <td>@item.CoachType</td>
+                <td>@item.Email</td>
+                <td>@item.Contact</td>
+
+
+
+            </tr>
+        }
+    </table>
+    <a asp-page="NewCoach" class="btn btn-primary">Add New Coach</a>
+</div>

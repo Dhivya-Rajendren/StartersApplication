@@ -1,0 +1,15 @@
+﻿@page
+@model FitnessClubApp.Pages.CoachStoryModel
+@{
+}
+
+<div class="card col-sm-6 w-25">
+    <div class="card-body">
+        <img class="card-img" src="~/images/Person.jpg"/>
+        <p class="card-text">@Model.Coach.CoachName</p>
+        <p class="card-text">@Model.Coach.CoachType</p>
+        <p class="card-text">@Model.Coach.Email</p>
+        <p class="card-text">@Model.Coach.Contact</p>
+    </div>
+    <div class="card-footer"><a asp-page="Coaches" class="btn btn-primary">Back to Coaches</a></div>
+</div>
