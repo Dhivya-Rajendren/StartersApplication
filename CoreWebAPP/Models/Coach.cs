@@ -12,8 +12,9 @@ namespace FitnessClubApp.Models
         public string CoachType { get; set; }
         public string Email { get; set; }
         public int Contact { get; set; }
+        public string CoachImgURL { get; set; }
 
 
-        
+
     }
 }

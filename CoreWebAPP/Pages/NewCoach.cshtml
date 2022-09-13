@@ -2,7 +2,7 @@
 @model FitnessClubApp.Pages.NewCoachModel
 @{
 }
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Coach Name :</td>
@@ -20,6 +20,9 @@
             <td>Coach Contact :</td>
             <td><input asp-for="Coach.Contact" id="txtContact" /></td>
         </tr>
+        <tr>
+            <td>Coach Picture :</td>
+           <td><input type="file" name="postedFiles" multiple/></td></tr>
         <tr>
             <td colspan="2"><input type="submit" class="btn btn-info" /></td>
         </tr>
